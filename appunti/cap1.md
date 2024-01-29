@@ -27,9 +27,9 @@ es: @angular/cli@17
 La cli è un tool che automatizza specifici task durante lo sviluppo.
 La sintassi è *ng command [options]*
 
-per vedere tutti i comandi disponibili: *ng help*
+Per vedere tutti i comandi disponibili: *ng help*
 
-i comandi più comuni:
+I comandi più comuni:
 - new: crea un nuovo angular cli workspace da zero, alias n
 - build: compila un'applicazione angular e ritorna i file generati in una cartella predefinita, alias b
 - generate: crea nuovi file che comprendono un'applicazione angular, alias g
@@ -41,13 +41,13 @@ provider inclusi nel CLI
 - completion: abilita l'auto-completamento per i comandi del CLI attraverso il terminale
 - update: aggiorna un'applicazione angular all'ultima versione di angular
 
-guida e tips per eseguire gli aggiornamenti ad angular in questo [link](https://update.angular.io)
+Guida e tips per eseguire gli aggiornamenti ad angular in questo [link](https://update.angular.io)
 
 ## Creating a new project
-*ng new nome-app* per creare un progetto nuovo
+*Ng new nome-app* per creare un progetto nuovo
 
-Dentro alla cartella del progetto saranno presenti varie cartelle e file di configurazione che CLI ha bisogno per 
-buildare, testare e pubblicare l'app:
+Dentro alla cartella del progetto saranno presenti varie cartelle e file di configurazione che CLI ha bisogno per fare 
+la build, testare e pubblicare l'app:
 - node_modules: include i pacchetti npm necessari per lo sviluppo e lancio dell'app
 - src: contiene i file sorgente dell'app
 - .gitignore: file ignorati da git
@@ -59,3 +59,32 @@ sono necessarie per lo sviluppo, test e lancio dell'app
 - tsconfig.json: configurazione di typescript che è specifica per la workspace
 - tsconfig.spec.json: configurazione di typescript che è specifica per unit test
 
+
+## Structure on an angular application
+Dentro la cartella src sarà presente:
+- app: contiene tutti i file dell'applicazione relativi ad angular
+- assets: contiene gli asset static come font, immagini e icone
+- favicon.ico: l'icona mostrata nella tab del browser, accanto al titolo della pagina
+- index.html: la pagina main html dell'applicazione
+- main.ts: entry point principale dell'applicazione
+- style.css o scss o sass (scelto alla creazione): questo css è applicato globalmente all'applicazione. l'estensione di
+questo file dipende dal formato stylesheet che è stato scelto alla creazione
+
+L'applicazione angular che è stata creata automaticamente dalla CLI contiene i seguenti file:
+- app.component.css
+- app.component.html
+- app.component.spec.ts
+- app.component.ts
+- app.module.ts
+- app-routing.module.ts
+
+## Components
+## Modules
+## Template syntax
+## VS code tooling
+## Angular language service
+## Angular snippets
+## Nx Console
+## Material icon theme
+## EditorConfig
+## Angular Evergreen
